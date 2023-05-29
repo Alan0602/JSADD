@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Addition</h1>
+    No.1:<input type="text" id="a"> + No.2:<input type="text" id="b">
+    <br><br>
+    <textarea placeholder="Sum=" id="s" class="p"></textarea>
+    <br><br>
+    <button id="button" onclick="sum()">Sum</button>
+    <script>
+       function sum(){
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var sum = parseInt("10",a) + parseInt("10",b);
+        document.getElementById("s").innerHTML=sum
+       }
+    </script>
+</body>
+</html>
